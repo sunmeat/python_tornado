@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTO TERMINAL — TOP 30</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-block">
+                <div class="pre-title">// REALTIME MARKET DATA ——</div>
+                <h1>CRYPTO<span>TERMINAL</span></h1>
+            </div>
+            <div class="header-meta">
+                <div class="label">SYSTEM STATUS</div>
+                <div id="status"><span class="dot"></span>ІНІЦІАЛІЗАЦІЯ...</div>
+            </div>
+        </header>
+
+        <div class="refresh-bar"><div id="progress"></div></div>
+
+        <div class="table-scroll">
+            <table id="tbl">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>МОНЕТА</th>
+                        <th class="right">ЦІНА USD</th>
+                        <th class="right">1г %</th>
+                        <th class="right">24г %</th>
+                        <th class="right hide-sm">7д %</th>
+                        <th class="right hide-sm">КАПІТАЛІЗАЦІЯ</th>
+                        <th class="right hide-sm">ОБ'ЄМ 24г</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+
+        <footer>[ DATA SOURCE: COINGECKO FREE API ] — [ AUTO-REFRESH: 30s ] — [ TOP 30 BY MARKET CAP ]</footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
